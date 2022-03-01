@@ -145,11 +145,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL= 'info@kahwart.com'
-SERVER_EMAIL = 'info@kahwart.com'
+DEFAULT_FROM_EMAIL= 'useremail'
+SERVER_EMAIL = 'useremail'
 EMAIL_HOST = 'smtp.yandex.com'
-EMAIL_HOST_USER = 'info@kahwart.com'
-EMAIL_HOST_PASSWORD = '123@Aamir'
+EMAIL_HOST_USER = 'useremail'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
