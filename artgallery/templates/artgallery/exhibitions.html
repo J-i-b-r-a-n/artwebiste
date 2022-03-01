@@ -1,0 +1,56 @@
+{% extends 'artwebsite/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<div class="tabs-content" id="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="wrapper">
+                    <section id="first-tab-group" class="tabgroup">
+                      <div id="tab1">
+                        <img src="{% static 'artgallery/images/kawhart11.jpeg' %}" alt="">
+                        <p>VASUNDHARA
+                                The Mother Earth
+                                18th October to 18th December 2020
+
+                                Prof. B. L. KAMBOJ MEMORIAL
+                                International Online Art Exhibition
+
+                                Organised By HIMPRASTH
+                            In Collaboration With SANSKAR BHARTI.
+                        </p>
+                      </div>
+                      <!--<div id="tab2">-->
+                        <!--<img src="{% static 'artgallery/images/may2018.jpeg' %}" alt="">-->
+                        <!--<p>-->
+                            <!--Article published in leading Travel and Culture magazine of Israel about the Artist in year 2018.-->
+                        <!--</p>-->
+                      <!--</div>-->
+                      <!--<div id="tab3">-->
+                        <!--<img src="{% static 'artgallery/images/feb2019.jpeg' %}" alt="">-->
+                        <!--<p>Article published in leading news media outlet Free Press Kashmir in February 2019 titled "The life sketch of an unassuming Artist " by well known journalist Hirra Azmat..</p>-->
+                      <!--</div>-->
+                      <!--<div id="tab4">-->
+                        <!--<img src="{% static 'artgallery/images/april2019.jpeg' %}" alt="">-->
+                        <!--<p>Article published in a Singapore based  Art magazine Jaamzin Creative Issue number 4 Vol 2 dated April 2019 about the artist..</p>-->
+                      <!--</div>-->
+                    </section>
+                    <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                      <li><a href="#tab1" class="active">18th Oct - 18th Dec 2020</a></li>
+                      <!--<li><a href="#tab2">May - 2018</a></li>-->
+                      <!--<li><a href="#tab3">Feb - 2019</a></li>-->
+                      <!--<li><a href="#tab4">April - 2019</a></li>-->
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

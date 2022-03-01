@@ -1,0 +1,53 @@
+{% extends 'artwebsite/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="parallax-content contact-content" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <div class="row">
+                          <h3 style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{message}}</h3>
+                            <form id="contact" method="POST">
+                              {% csrf_token %}
+                                <div class="row">
+                        
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="name" type="text" class="form-control" id="email" placeholder="Your full name..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="map text-white">
+                        <br>
+                      <h2 class="text-center">Contact US</h2>
+                    <p>
+                        For any business enquiries contact us on jibranjibby2@gmail.com, please complete the form and he will be in touch shortly.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

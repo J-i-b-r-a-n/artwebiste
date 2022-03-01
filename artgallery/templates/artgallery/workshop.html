@@ -1,0 +1,41 @@
+{% extends 'artwebsite/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<div class="tabs-content" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="wrapper">
+                    <section id="first-tab-group" class="tabgroup">
+                      <div id="tab1">
+                        <img src="{% static 'artgallery/images/w1.JPG' %}" alt="">
+                      </div>
+                      <div id="tab2">
+                        <img src="{% static 'artgallery/images/w2.JPG' %}" alt="">
+                      </div>
+                      <div id="tab3">
+                        <img src="{% static 'artgallery/images/w3.JPG' %}" alt="">
+                      </div>
+                      <div id="tab4">
+                        <img src="{% static 'artgallery/images/w4.JPG' %}" alt="">
+                      </div>
+                    </section>
+                    <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                      <li><a href="#tab1" class="active">1</a></li>
+                      <li><a href="#tab2">2</a></li>
+                      <li><a href="#tab3">3</a></li>
+                      <li><a href="#tab4">4</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

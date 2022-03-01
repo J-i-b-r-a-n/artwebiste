@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Art Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{% static 'artgallery/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'artgallery/css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'artgallery/css/hero-slider.css' %}">
+        <link rel="stylesheet" href="{% static 'artgallery/css/templatemo-main.css' %}">
+        <link rel="stylesheet" href="{% static 'artgallery/css/owl-carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'artgallery/css/custom.css' %}">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Qwigley&family=Ruthie&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Italiana&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="{% static 'artgallery/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+
+    </head>
+
+<body>
+
+   <!--<div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><span>Services</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio"><span>Portfolio</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-story"><span>Our Story</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
+        </ul>
+      </div>
+    -->
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>
+      <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <a href="{% url 'index' %}" class="scrollto">KAHW ART</a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'aboutus' %}">About</a></li>
+          <li><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li><a href="{% url 'publications' %}">Media Coverage</a></li>
+
+             <li class="drop-down"><a href="{% static 'artgallery/' %}">Events</a>
+              <ul>
+              
+              <li class="drop-down"><a href="{% static 'artgallery/' %}">Workshops</a>
+                <ul>
+                  <li><a href="{% url 'workshop1' %}">2021</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2020</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2019</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2018</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2017</a></li>
+
+                </ul>
+              </li>
+              <li><a href="{% static 'artgallery/#' %}">Shows</a></li>
+            </ul>
+          </li>
+            <li><a href="">Shop</a></li>
+              <li><a href="{% url 'services' %}" >Services</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+              <!--<a href="{% url 'services' %}" >Services</a>-->
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+{% block content %}
+{% endblock %}
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--<div class="primary-button">-->
+                        <!--<a href="#home">Back To Top</a>-->
+                    <!--</div>-->
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <p>Copyright &copy; 2021 ETimes Media
+
+          
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="{% static 'artgallery/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'artgallery/js/plugins.js' %}"></script>
+    <script src="{% static 'artgallery/js/main.js' %}"></script>
+    <script src="{% static 'artgallery/js/mobile-nav/mobile-nav.js' %}"></script>
+    <script src="{% static 'artgallery/js/isotope/isotope.pkgd.min.js' %}"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+
+</body>
+</html>
